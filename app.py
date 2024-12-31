@@ -23,7 +23,7 @@ try:
 except LookupError:
     nltk.download('wordnet')
 
-nltk.download('punkt', quiet=True)
+nltk.download('punkt_tab')
 # Connect to MongoDB Atlas
 def connect_to_mongodb():
     client = pymongo.MongoClient("mongodb+srv://jashwanthakula26:majormongo0745@cluster0.uqvju.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
